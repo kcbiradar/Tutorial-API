@@ -10,6 +10,12 @@ const Tutorial = function (tutorial) {
 Tutorial.create = (newTutorial) => {
   return new Promise((resolve, reject) => {
     const { title, description, published } = newTutorial;
+
+    if(!title) {
+      reject("Title should not be null, Please provide tutorial name");
+      return;
+    }
+
     pool.query(
       queries.createTutorial,
       [title, description, published],

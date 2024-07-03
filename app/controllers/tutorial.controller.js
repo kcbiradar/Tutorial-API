@@ -18,7 +18,6 @@ exports.create = (request, response) => {
       response.send(result.rows);
     })
     .catch((error) => {
-      console.log(error);
       response.send(error);
     });
 };
