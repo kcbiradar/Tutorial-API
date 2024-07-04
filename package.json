@@ -5,9 +5,9 @@
   "scripts": {
     "app" : "nodemon index.js"
   },
-  "author": "",
+  "author": "kcbiradar",
   "license": "ISC",
-  "description": "",
+  "description": "Tutorial application api",
   "dependencies": {
     "express": "^4.19.2",
     "pg": "^8.12.0"
